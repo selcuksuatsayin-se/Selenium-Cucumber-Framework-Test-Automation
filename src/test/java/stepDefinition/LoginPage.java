@@ -45,7 +45,7 @@ public class LoginPage {
 
 
     @Then("User should be able to view locked out warning massage")
-    public void user_should_be_able_to_locked_out_warning_massage () throws InterruptedException {
+    public void user_should_be_able_to_view_locked_out_warning_massage() throws InterruptedException {
         visibility_locked_out_user_warning();
     }
 
