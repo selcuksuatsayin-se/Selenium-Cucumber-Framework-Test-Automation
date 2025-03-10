@@ -1,8 +1,6 @@
 package pages;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import utility.BrowserDriver;
 
 import static org.junit.Assert.assertEquals;
@@ -126,17 +124,17 @@ public class HomePage extends BrowserDriver {
     }
 
     public static void sendkeys_first_name() throws InterruptedException {
-        driver.findElement(By.id(first_name_text_id)).sendKeys("selcuk");
+        driver.findElement(By.id(first_name_text_id)).sendKeys("your_first_name");
         Thread.sleep(2000);
     }
 
     public static void sendkeys_last_name() throws InterruptedException {
-        driver.findElement(By.id(last_name_text_id)).sendKeys("sayin");
+        driver.findElement(By.id(last_name_text_id)).sendKeys("your_last_name");
         Thread.sleep(2000);
     }
 
     public static void sendkeys_zip_postal_code() throws InterruptedException {
-        driver.findElement(By.id(zip_postal_code_text_id)).sendKeys("35000");
+        driver.findElement(By.id(zip_postal_code_text_id)).sendKeys("your_zip_postal_code");
         Thread.sleep(2000);
     }
 }
